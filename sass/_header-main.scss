@@ -1,0 +1,29 @@
+.header-main {
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  //   url(../img/image4.jpg);
+  // background-size: cover;
+  // background-position: center;
+  background-image: url(../img/woman.png);
+  background-size: cover;
+  background-position: center;
+  grid-column: center-start / full-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.header__text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: $color-grey-dark-1 !important;
+  width: 40%;
+}
+
+.header__side-image {
+  grid-column: col-start 6 / center-end;
+  background-image: url(../img/woman.png);
+  background-size: cover;
+  background-position: center;
+}

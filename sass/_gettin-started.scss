@@ -1,0 +1,42 @@
+.getting-started {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-column-gap: 3rem;
+  padding: 15rem 0;
+  // background-color: $color-grey-light-1;
+
+  h2 {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  h4 {
+    grid-column: 1 / -1;
+    font-size: 1.4rem;
+    justify-self: center;
+    color: rgba($color-primary, 0.7);
+  }
+
+  &__box {
+    padding: 5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  &__step {
+    font-size: 7rem;
+    font-weight: 500;
+    color: $color-primary;
+  }
+
+  &__h3 {
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: $color-grey-dark-2;
+  }
+}

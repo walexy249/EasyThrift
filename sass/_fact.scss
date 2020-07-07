@@ -1,0 +1,30 @@
+.fact {
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(to right, $color-primary, $color-secondary);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-column: 3rem;
+  padding: 0 5rem;
+
+  &__feautures {
+    color: #fff;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    grid-column-gap: 2rem;
+  }
+
+  &__heading {
+    color: $color-secondary;
+    font-size: 8rem;
+  }
+
+  &__details {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}

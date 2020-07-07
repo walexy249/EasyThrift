@@ -1,0 +1,11 @@
+.about {
+  grid-column: col-start 6 / full-end;
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15rem 0;
+}
+.about-us__text {
+  // color: $color-text;
+}

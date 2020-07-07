@@ -1,0 +1,83 @@
+.footer {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+  padding: 15rem 0;
+  //   justify-content: center;
+
+  &__logo {
+    text-decoration: none;
+    color: $color-primary;
+    margin-right: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+
+    &--text {
+      color: $color-grey-dark-1;
+    }
+  }
+  &__box {
+  }
+
+  &__heading {
+    font-size: 2rem;
+    color: $color-primary;
+    text-transform: capitalize;
+  }
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-row-gap: 0.5rem;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-text;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+  &__icon {
+    &--facebook,
+    &--google,
+    &--twitter,
+    &--instagram {
+      width: 4.5rem;
+      height: 4.5rem;
+      fill: $color-primary;
+    }
+
+    &--google {
+      fill: #f03b3b;
+    }
+    &--twitter {
+      fill: #49a7f3;
+    }
+
+    &--instagram {
+      fill: #bb8950;
+    }
+  }
+
+  &__copyright {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+
+    &--text {
+      width: 50%;
+      color: $color-text;
+      font-size: 1.5rem;
+
+      strong {
+        color: $color-primary;
+        font-style: bold;
+        font-style: 1.8rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

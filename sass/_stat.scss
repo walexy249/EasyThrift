@@ -1,0 +1,17 @@
+.stat {
+  grid-column: center-start / center-end;
+  display: grid;
+  justify-items: center;
+  padding: 15rem 0;
+
+  &__heading {
+    font-size: 4rem;
+    color: $color-primary-2;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: $color-text;
+    font-weight: 700;
+  }
+}
