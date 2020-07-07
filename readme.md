@@ -1,4 +1,4 @@
-#EasyThrift website
+# EasyThrift website
 
 EasyThrift is an online thrift application where users can save money and online..
 
