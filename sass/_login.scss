@@ -1,0 +1,111 @@
+.login__body {
+  background-color: $color-primary-3;
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 2rem;
+  padding: 3rem 0;
+}
+
+.login__heading {
+  color: $color-primary-3;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+.EasyThrift__logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3.5rem;
+  align-self: center;
+  font-weight: 600;
+}
+
+.login__box {
+  background-color: #fff;
+  color: #000;
+  padding: 5rem;
+  border-radius: 1rem;
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 0.5rem;
+
+  p {
+    font-size: 1.3rem;
+    text-align: center;
+    color: $color-primary-3;
+  }
+}
+
+.form {
+  width: 35rem;
+
+  &__group {
+    justify-self: start;
+  }
+  &__label {
+    display: block;
+    font-size: 1.4rem;
+    color: #4a5568;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  &__input {
+    padding: 1.5rem 2.5rem;
+    background-color: #edf2f7;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid red;
+    }
+    &:focus:valid {
+      border-bottom: 3px solid green;
+    }
+  }
+}
+
+.btn--submit {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  background-color: #0d60d8;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 4px;
+  &:hover {
+    background-color: #083e9e;
+  }
+}
+
+.register__link,
+.forgot-password__link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+}
+.register__link:hover,
+.register__link:hover:active {
+  color: $color-grey-dark-2;
+}
+.forgot-password__link:hover,
+.forgot-password__link:hover {
+  color: $color-grey-dark-2;
+}
+.error__message {
+  color: red;
+  font-size: 1.6rem;
+  //   display: none;
+}

@@ -1,9 +1,14 @@
 .header-nav {
   grid-row: 1 / 2;
-  grid-column: center-start / center-end;
+  grid-column: full-start / full-end;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  padding: 0 5rem;
 }
 
 .logo__link {
