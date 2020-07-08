@@ -39,4 +39,8 @@ body {
     [full-start] minmax(6rem, 1fr) [center-start]
     repeat(10, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media (max-width: 900px) {
+    grid-template-rows: 8rem 70vh repeat(7, min-content);
+  }
 }

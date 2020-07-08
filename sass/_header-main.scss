@@ -12,6 +12,11 @@
   justify-content: center;
   align-items: flex-start;
   color: #fff;
+
+  @media (max-width: 900px) {
+    background-image: none;
+    justify-content: center;
+  }
 }
 
 .header__text {
@@ -19,11 +24,8 @@
   font-weight: 300;
   color: $color-grey-dark-1 !important;
   width: 40%;
-}
 
-.header__side-image {
-  grid-column: col-start 6 / center-end;
-  background-image: url(../img/woman.png);
-  background-size: cover;
-  background-position: center;
+  @media (max-width: 900px) {
+    width: 90%;
+  }
 }

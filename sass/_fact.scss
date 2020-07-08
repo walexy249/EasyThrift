@@ -3,8 +3,22 @@
   background-image: linear-gradient(to right, $color-primary, $color-secondary);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-column: 3rem;
+  grid-column-gap: 3rem;
   padding: 0 5rem;
+  justify-items: center;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 765px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 565px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 
   &__feautures {
     color: #fff;
@@ -19,12 +33,19 @@
   &__heading {
     color: $color-secondary;
     font-size: 8rem;
+
+    @media (max-width: 1200px) {
+      font-size: 6rem;
+    }
   }
 
   &__details {
     color: #fff;
     font-size: 1.6rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 400;
+    @media (max-width: 1200px) {
+      font-size: 1.4rem;
+    }
   }
 }

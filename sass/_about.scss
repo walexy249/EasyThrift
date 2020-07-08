@@ -5,6 +5,11 @@
   flex-direction: column;
   justify-content: center;
   padding: 15rem 0;
+
+  @media (max-width: 1000px) {
+    grid-column: center-start / center-end;
+    grid-row: 3 / 4;
+  }
 }
 .about-us__text {
   // color: $color-text;

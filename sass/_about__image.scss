@@ -2,4 +2,9 @@
   grid-column: full-start / col-end 5;
   width: 100%;
   padding: 15rem 0;
+  @media (max-width: 1000px) {
+    grid-column: center-start / center-end;
+    grid-row: 4 / 5;
+    display: none;
+  }
 }

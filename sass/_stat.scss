@@ -7,6 +7,9 @@
   &__heading {
     font-size: 4rem;
     color: $color-primary-2;
+    @media (max-width: 765px) {
+      font-size: 3rem;
+    }
   }
 
   &__text {
