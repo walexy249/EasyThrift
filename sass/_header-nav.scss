@@ -56,7 +56,11 @@
 
     &__item {
       display: block !important;
-      padding: 2.5rem 2.5rem;
+      // padding: 2.5rem 2.5rem !important;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
     }
 
     &__link {
@@ -64,7 +68,7 @@
       &:visited,
       &:link {
         font-size: 3rem;
-        padding: 0 1.5rem;
+        padding: 1.5rem 2.5rem;
         display: block;
         color: #fff !important;
         // font-family: sans-serif;
@@ -76,6 +80,7 @@
   &__item {
     list-style: none;
     display: inline-block;
+    padding: 0 1.5rem;
   }
 
   &__link {
@@ -85,7 +90,7 @@
       font-size: 1.4rem;
       font-weight: 700;
       color: #6e6d7a;
-      padding: 0 1.5rem;
+      // padding: 0 1.5rem;
       text-transform: uppercase;
       display: block;
       color: rgba($color-primary, 0.6);

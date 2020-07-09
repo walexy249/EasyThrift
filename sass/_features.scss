@@ -12,6 +12,9 @@
   grid-gap: 6rem;
   justify-items: center;
 
+  @media (max-width: 765px) {
+    padding: 15rem 1.5rem;
+  }
   &__h2 {
     grid-column: 1 / -1;
     text-align: center;

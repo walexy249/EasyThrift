@@ -28,6 +28,10 @@
   justify-items: center;
   grid-row-gap: 0.5rem;
 
+  // @media (max-width: 765px) {
+  //   padding: 2.5rem;
+  // }
+
   p {
     font-size: 1.3rem;
     text-align: center;
@@ -37,7 +41,9 @@
 
 .form {
   width: 35rem;
-
+  @media (max-width: 765px) {
+    width: 90%;
+  }
   &__group {
     justify-self: start;
   }
