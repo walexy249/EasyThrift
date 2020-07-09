@@ -17,11 +17,20 @@
             <li class="nav__item">
               <a href="" class="nav__link">contat us</a>
             </li>
+            <li class="nav__item">
+            <a href="login.html" class="nav__link">login</a>
+            </li>
+            <li class="nav__item">
+            <a href="signup.html" class="nav__link" class="btn btn--blue">signup</a>
+            </li>
           </ul>
-          <div class="nav__right">
+          <!-- <div class="nav__right">
             <a href="login.html" class="btn btn--blue">login</a>
             <a href="signup.html" class="btn btn--blue">signup</a>
-          </div>
+          </div> -->
+          <svg class="icon--menu">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
         </nav>
         <!--  -->
       </div>
@@ -355,5 +364,13 @@
       </footer>
       
     </div>
+
+    <script>
+        let a = document.querySelector('.icon--menu');
+      let b = document.querySelector('ul');
+      a.addEventListener('click', function(){
+        b.classList.toggle('display--none');
+      })
+    </script>
   </body>
 </html>
