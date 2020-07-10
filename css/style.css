@@ -577,6 +577,95 @@ body {
   color: rgba(20, 68, 153, 0.7);
   font-weight: 500; }
 
+.user-container {
+  display: grid;
+  grid-template-columns: 30rem 1fr; }
+
+.main {
+  padding: 8rem 5rem;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-row-gap: 2rem; }
+  .main__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .main__top__icon {
+      width: 8rem;
+      height: 8rem;
+      fill: #062863; }
+
+.user__name {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #333; }
+
+.balance {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 3rem;
+  align-items: start; }
+  .balance__box {
+    padding: 2.5rem 2rem;
+    color: #fff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column-gap: 2rem; }
+    .balance__box svg {
+      grid-row: 1 / span 2;
+      align-self: center;
+      width: 3rem;
+      height: 3rem;
+      fill: #fff; }
+    .balance__box--1 {
+      background-color: #0d60d8; }
+    .balance__box--2 {
+      background-color: #7913e5; }
+    .balance__box--3 {
+      background-color: #222222; }
+  .balance__heading {
+    font-size: 2rem;
+    text-transform: capitalize; }
+  .balance__amount {
+    font-size: 3.5rem; }
+
+.sidebar {
+  background-color: #062863;
+  color: #fff;
+  padding: 2.5rem 3rem;
+  display: grid; }
+  .sidebar__top {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center; }
+  .sidebar__easythrift {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600; }
+  .sidebar__navigation__list {
+    list-style: none;
+    display: grid;
+    grid-row-gap: 1.5rem; }
+  .sidebar__link {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center; }
+    .sidebar__link span {
+      font-size: 1.8rem;
+      text-transform: capitalize; }
+  .sidebar__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: #fff;
+    margin-right: 3rem; }
+  .sidebar__bottom {
+    align-self: end; }
+
 .u-margin-bottom-1 {
   margin-bottom: 1rem; }
 

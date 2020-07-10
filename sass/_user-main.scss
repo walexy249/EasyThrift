@@ -1,0 +1,72 @@
+.main {
+  padding: 8rem 5rem;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-row-gap: 2rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__link {
+    }
+    &__icon {
+      width: 8rem;
+      height: 8rem;
+      fill: $color-primary-3;
+    }
+  }
+}
+
+.user__name {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: $color-grey-dark-1;
+}
+
+.balance {
+  //   display: flex;
+  //   justify-content: space-around;
+  //   align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 3rem;
+  align-items: start;
+  &__box {
+    padding: 2.5rem 2rem;
+    color: #fff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column-gap: 2rem;
+    svg {
+      grid-row: 1 / span 2;
+      align-self: center;
+      width: 3rem;
+      height: 3rem;
+      fill: #fff;
+    }
+    &--1 {
+      background-color: rgb(13, 96, 216);
+    }
+
+    &--2 {
+      background-color: rgb(121, 19, 229);
+    }
+
+    &--3 {
+      background-color: rgb(34, 34, 34);
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+
+  &__amount {
+    font-size: 3.5rem;
+  }
+}
