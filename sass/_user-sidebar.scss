@@ -2,9 +2,12 @@
   background-color: $color-primary-3;
   color: #fff;
   padding: 2.5rem 3rem;
-  // height: 100vh;
-
   display: grid;
+  grid-template-rows: min-content;
+
+  @media (max-width: 765px) {
+    display: none;
+  }
 
   &__top {
     display: grid;
@@ -24,16 +27,7 @@
     list-style: none;
     display: grid;
     grid-row-gap: 1.5rem;
-    // &:not(:last-child) {
-    //   margin-bottom: 3rem;
-    // }
   }
-  &____navigation__item {
-    // &:not(:last-child) {
-    //   margin-bottom: 3rem;
-    // }
-  }
-
   &__link {
     text-decoration: none;
     color: #fff;
@@ -43,7 +37,7 @@
     align-items: center;
 
     span {
-      font-size: 1.8rem;
+      font-size: 2rem;
       text-transform: capitalize;
     }
   }

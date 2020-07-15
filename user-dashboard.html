@@ -15,6 +15,7 @@
           </svg>
           <a href="index.html" class="sidebar__easythrift">EasyThrift</a>
         </div>
+
         <div class="sidebar__navigation">
           <ul class="sidebar__navigation__list">
             <li class="sidebar__navigation__item">
@@ -67,9 +68,10 @@
           <span>logout</span>
         </a>
       </div>
+
       <div class="main">
         <div class="main__top">
-          <h3 class="user__name">
+          <h3 class="user-dashoboard__name">
             Hi, LawaL
           </h3>
 
@@ -79,7 +81,9 @@
             </svg>
           </a>
         </div>
-        <div class="balance">
+
+        <!-------- home navigation----------------- -->
+        <!-- <div class="balance">
           <div class="balance__box balance__box--1">
             <svg class="">
               <use xlink:href="img/sprite.svg#icon-line-graph"></use>
@@ -102,6 +106,75 @@
                 <h3 class="balance__amount">&#8358 0.00</h3>
             </div>
         </div>
+    
+        <div class="user-get-started">
+          <h2 class="u-margin-bottom-2">Get started</h2>
+          <a href="index.html" class="user-get-started__link">
+            <svg class="u-margin-bottom-4">
+              <use xlink:href="img/sprite.svg#icon-pie-chart"></use>
+            </svg>
+            <span>Create your savings plan &rarr;</span> 
+          </a>
+        </div> -->
+
+        <!-------- --------------------------------- -->
+
+        <div class="user-getting-started">
+          <h2>configure your savings plan</h2>
+          <form action="" class="plan__form">
+            <div class="input__group">
+              <label class="input__group__label" for=""
+                >How long will you like to save</label
+              >
+              <select class="input__group__select" name="selection" id="">
+                <option value="">1 month</option>
+                <option value="">2 month</option>
+                <option value="">3 month</option>
+                <option value="">4 month</option>
+              </select>
+            </div>
+            <div class="input__group">
+              <label class="input__group__label" for=""
+                >How much would you like to save for now</label
+              >
+              <input class="input__group__input" type="text" />
+            </div>
+
+            <div class="input__group">
+              <label class="input__group__label" for="">Account number</label>
+              <input class="input__group__input" type="text" />
+            </div>
+            <div class="input__group">
+              <label class="input__group__label" for="">Account name</label>
+              <input type="text" class="input__group__input" />
+            </div>
+            <div class="input__group">
+              <label class="input__group__label" for="">Bank name</label>
+              <select class="input__group__select" name="selection" id="">
+                <option value="">GT bank</option>
+                <option value="">Access bank</option>
+                <option value="">first bank</option>
+                <option value="">UBA bank</option>
+              </select>
+            </div>
+
+            <div class="input__group">
+              <button class="btn btn--blue" type="submit">
+                Save plan
+              </button>
+            </div>
+          </form>
+
+          <h3>
+            <strong>Note: </strong>For discipline, withdrawals can only be done
+            on your choosen maturity date(e.g if you choose 1 month, you will
+            only be paid after 30 days)
+          </h3>
+        </div>
+
+        <!-- -------------------------------- -->
+
+        <!-- ----------- -->
       </div>
     </div>
   </body>

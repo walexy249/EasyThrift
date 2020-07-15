@@ -1,25 +1,30 @@
 .main {
-  padding: 8rem 5rem;
+  padding: 5rem 5rem;
   display: grid;
   grid-template-rows: min-content;
   grid-row-gap: 2rem;
 
+  @media (max-width: 765px) {
+    padding: 2rem 2rem;
+    grid-column: 1 / -1;
+  }
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     &__link {
     }
     &__icon {
-      width: 8rem;
-      height: 8rem;
+      width: 6rem;
+      height: 6rem;
       fill: $color-primary-3;
     }
   }
 }
 
-.user__name {
+.user-dashoboard__name {
   font-size: 2.7rem;
   font-weight: 700;
   color: $color-grey-dark-1;
@@ -68,5 +73,35 @@
 
   &__amount {
     font-size: 3.5rem;
+  }
+}
+
+.user-get-started {
+  justify-self: start;
+  h2 {
+    color: rgba($color-primary-2, 0.3);
+    font-size: 3.5rem;
+    text-transform: capitalize;
+  }
+  &__link {
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba($color-primary-3, 0.3);
+    border-radius: 7px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    svg {
+      width: 4rem;
+      height: 4rem;
+      fill: $color-primary-3;
+    }
+
+    span {
+      font-size: 2rem;
+      color: $color-primary-3;
+    }
   }
 }
