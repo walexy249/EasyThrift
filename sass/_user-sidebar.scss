@@ -4,6 +4,7 @@
   padding: 2.5rem 3rem;
   display: grid;
   grid-template-rows: min-content;
+  min-height: 100vh;
 
   @media (max-width: 765px) {
     display: none;
