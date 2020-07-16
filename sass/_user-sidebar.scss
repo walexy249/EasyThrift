@@ -4,10 +4,17 @@
   padding: 2.5rem 3rem;
   display: grid;
   grid-template-rows: min-content;
-  min-height: 100vh;
+  // height: 100vh;
 
   @media (max-width: 765px) {
-    display: none;
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: calc(100vh - 8rem);
+    top: 8rem;
+    left: 0;
+    z-index: 200;
+    grid-column: 1 / -1;
+    background-color: #fff;
   }
 
   &__top {
@@ -15,6 +22,9 @@
     grid-template-columns: min-content 1fr;
     // grid-column-gap: 2rem;
     align-items: center;
+    @media (max-width: 765px) {
+      display: none;
+    }
   }
 
   &__easythrift {
@@ -28,6 +38,11 @@
     list-style: none;
     display: grid;
     grid-row-gap: 1.5rem;
+
+    @media (max-width: 765px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__link {
     text-decoration: none;
@@ -36,10 +51,17 @@
 
     display: flex;
     align-items: center;
+    @media (max-width: 765px) {
+      flex-direction: column;
+      color: $color-grey-dark-1;
+    }
 
     span {
       font-size: 2rem;
       text-transform: capitalize;
+      @media (max-width: 765px) {
+        font-size: 2rem;
+      }
     }
   }
   &__icon {
@@ -47,9 +69,17 @@
     height: 3rem;
     fill: #fff;
     margin-right: 3rem;
+    @media (max-width: 765px) {
+      margin-right: 0;
+      fill: $color-primary-3;
+    }
   }
 
   &__bottom {
     align-self: end;
+
+    @media (max-width: 765px) {
+      display: none;
+    }
   }
 }

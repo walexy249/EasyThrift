@@ -1,5 +1,8 @@
 .user-container {
   display: grid;
-  grid-template-columns: 30rem 1fr;
-  // align-items: start;
+  grid-template-columns: 25rem 1fr;
+
+  @media (max-width: 765px) {
+    grid-template-columns: 1fr;
+  }
 }
