@@ -838,8 +838,7 @@ body {
       display: block;
       padding: 1.5rem 2rem;
       position: fixed;
-      top: calc(100vh - 8rem);
-      height: 8rem;
+      top: calc(100vh - 11rem);
       left: 0;
       z-index: 200;
       background-color: #fff;
