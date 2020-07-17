@@ -7,10 +7,10 @@
 
   @media (max-width: 765px) {
     display: block;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     position: fixed;
-    top: calc(100vh - 11rem);
-    // height: 8rem;
+    top: calc(100vh - 10rem);
+    height: 10rem;
     left: 0;
     z-index: 200;
     background-color: #fff;
@@ -60,7 +60,7 @@
       font-size: 2rem;
       text-transform: capitalize;
       @media (max-width: 765px) {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
     }
   }
@@ -71,7 +71,7 @@
     margin-right: 3rem;
     @media (max-width: 765px) {
       margin-right: 0;
-      fill: $color-primary-3;
+      fill: rgba($color-primary-3, 0.7);
     }
   }
 

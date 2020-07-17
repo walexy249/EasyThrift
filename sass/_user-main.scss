@@ -56,6 +56,10 @@
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-column-gap: 2rem;
+
+    @media (max-width: 765px) {
+      // padding: 1rem 1.5rem;
+    }
     svg {
       grid-row: 1 / span 2;
       align-self: center;
@@ -79,11 +83,21 @@
   &__heading {
     font-size: 2rem;
     text-transform: capitalize;
+    @media (max-width: 765px) {
+      font-size: 1.7rem;
+    }
   }
 
   &__amount {
     font-size: 3.5rem;
+    @media (max-width: 765px) {
+      font-size: 2rem;
+    }
   }
+}
+
+.note {
+  margin-bottom: 10rem;
 }
 
 .user-get-started {
@@ -103,10 +117,16 @@
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    @media (max-width: 765px) {
+      padding: 1.2rem;
+    }
     svg {
       width: 4rem;
       height: 4rem;
       fill: $color-primary-3;
+      @media (max-width: 765px) {
+        margin-bottom: 2rem;
+      }
     }
 
     span {

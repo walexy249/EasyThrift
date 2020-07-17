@@ -800,8 +800,17 @@ body {
   .balance__heading {
     font-size: 2rem;
     text-transform: capitalize; }
+    @media (max-width: 765px) {
+      .balance__heading {
+        font-size: 1.7rem; } }
   .balance__amount {
     font-size: 3.5rem; }
+    @media (max-width: 765px) {
+      .balance__amount {
+        font-size: 2rem; } }
+
+.note {
+  margin-bottom: 10rem; }
 
 .user-get-started {
   justify-self: start; }
@@ -819,10 +828,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+    @media (max-width: 765px) {
+      .user-get-started__link {
+        padding: 1.2rem; } }
     .user-get-started__link svg {
       width: 4rem;
       height: 4rem;
       fill: #062863; }
+      @media (max-width: 765px) {
+        .user-get-started__link svg {
+          margin-bottom: 2rem; } }
     .user-get-started__link span {
       font-size: 2rem;
       color: #062863; }
@@ -836,9 +851,10 @@ body {
   @media (max-width: 765px) {
     .sidebar {
       display: block;
-      padding: 1.5rem 2rem;
+      padding: 1rem 2rem;
       position: fixed;
-      top: calc(100vh - 11rem);
+      top: calc(100vh - 10rem);
+      height: 10rem;
       left: 0;
       z-index: 200;
       background-color: #fff;
@@ -878,7 +894,7 @@ body {
       text-transform: capitalize; }
       @media (max-width: 765px) {
         .sidebar__link span {
-          font-size: 2rem; } }
+          font-size: 1.6rem; } }
   .sidebar__icon {
     width: 3rem;
     height: 3rem;
@@ -887,7 +903,7 @@ body {
     @media (max-width: 765px) {
       .sidebar__icon {
         margin-right: 0;
-        fill: #062863; } }
+        fill: rgba(6, 40, 99, 0.7); } }
   .sidebar__bottom {
     align-self: end; }
     @media (max-width: 765px) {
