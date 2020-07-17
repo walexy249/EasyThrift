@@ -4,17 +4,17 @@
   padding: 2.5rem 3rem;
   display: grid;
   grid-template-rows: min-content;
-  // height: 100vh;
 
   @media (max-width: 765px) {
+    display: block;
     padding: 1.5rem 2rem;
-    position: sticky;
+    position: fixed;
     top: calc(100vh - 8rem);
-    top: 8rem;
+    height: 8rem;
     left: 0;
     z-index: 200;
-    grid-column: 1 / -1;
     background-color: #fff;
+    width: 100%;
   }
 
   &__top {

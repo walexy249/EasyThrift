@@ -8,6 +8,10 @@
     color: $color-primary-3;
     text-align: center;
     text-transform: capitalize;
+
+    @media (max-width: 765px) {
+      font-size: 2rem;
+    }
   }
   &__box {
     display: grid;
@@ -44,6 +48,7 @@
         grid-column: 1 / -1;
         padding: 0;
         margin-bottom: 1rem;
+        font-size: 1.4rem;
       }
     }
 
@@ -55,13 +60,13 @@
 
       @media (max-width: 765px) {
         grid-column: 1 / -1;
+        font-size: 1.4rem;
       }
     }
 
     span {
-      font-size: 2rem;
       text-transform: capitalize;
-      font-weight: 700;
+      font-weight: 500;
       color: $color-grey-dark-1;
     }
 
