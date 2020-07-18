@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="user-container">
+      <div class="sidebar">
+        <div class="sidebar__top u-margin-bottom-4">
+          <svg class="sidebar__icon">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+          <a href="index.html" class="sidebar__easythrift">EasyThrift</a>
+        </div>
+
+        <div class="sidebar__navigation">
+          <ul class="sidebar__navigation__list">
+            <li class="sidebar__navigation__item">
+              <a href="user-dashboard.html" class="sidebar__link">
+                <svg class="sidebar__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>home</span>
+              </a>
+            </li>
+
+            <li class="sidebar__navigation__item">
+              <a href="payment-history.html" class="sidebar__link">
+                <svg class="sidebar__icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>history</span>
+              </a>
+            </li>
+            <li class="sidebar__navigation__item">
+              <a href="" class="sidebar__link">
+                <svg class="sidebar__icon">
+                  <use xlink:href="img/sprite.svg#icon-credit-card"></use>
+                </svg>
+                <span>payment</span>
+              </a>
+            </li>
+
+            <!-- <li class="sidebar__navigation__item">
+              <a href="" class="sidebar__link">
+                <svg class="sidebar__icon">
+                  <use xlink:href="img/sprite.svg#icon-account_circle"></use>
+                </svg>
+                <span>account</span>
+              </a>
+            </li> -->
+
+            <li class="sidebar__navigation__item">
+              <a href="index.html" class="sidebar__link">
+                <svg class="sidebar__icon">
+                  <use xlink:href="img/sprite.svg#icon-log-out"></use>
+                </svg>
+                <span>logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <a href="" class="sidebar__link sidebar__bottom">
+          <svg class="sidebar__icon">
+            <use xlink:href="img/sprite.svg#icon-log-out"></use>
+          </svg>
+          <span>logout</span>
+        </a> -->
+      </div>
+
+      <div class="main">
+        <div class="main__top">
+          <h3 class="user-dashoboard__name">
+            Hi, LawaL
+          </h3>
+
+          <a href="profile.html" class="main__top__link">
+            <svg class="main__top__icon">
+              <use xlink:href="img/sprite.svg#icon-account_circle"></use>
+            </svg>
+          </a>
+        </div>
+
+        <!-- ------------payment history-------------------- -->
+
+        <div class="user-history">
+          <h2 class="">Payment history</h2>
+          <table class="user-history__table">
+            <thead>
+              <th>S.No</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Date</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>5000</td>
+                <td>Success</td>
+                <td>2020-02-12 04:49:28</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2000</td>
+                <td>Success</td>
+                <td>2020-02-12 04:49:28</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>15000</td>
+                <td>Success</td>
+                <td>2020-02-12 04:49:28</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>9000</td>
+                <td>Success</td>
+                <td>2020-02-12 04:49:28</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>12000</td>
+                <td>Success</td>
+                <td>2020-02-12 04:49:28</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ----------- -->
+
+        <!-- ----------------------- -->
+      </div>
+    </div>
+  </body>
+</html>
