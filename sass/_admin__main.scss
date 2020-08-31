@@ -1,0 +1,56 @@
+.admin__main {
+  background-color: #f1f2f7;
+  padding: 1.5rem 3rem;
+  &__top {
+    h3 {
+      color: $color-grey-dark-1;
+      font-size: 2rem;
+      font-weight: 300;
+      text-transform: capitalize;
+
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+.admin__main__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2.5rem;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-transform: capitalize;
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  svg {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    width: 7rem;
+    height: 7rem;
+    fill: rgba($color-black, 0.2);
+    padding-left: 1rem;
+  }
+  &--1 {
+    background-color: #00c0ef;
+  }
+  &--2 {
+    background-color: #00a65a;
+  }
+  &--3 {
+    background-color: #f39c12;
+  }
+  &--4 {
+    background-color: #dd4b39;
+  }
+}

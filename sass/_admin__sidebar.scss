@@ -1,0 +1,31 @@
+.admin__sidebar {
+  background-color: #062863;
+  height: 100vh;
+  padding-top: 2rem;
+
+  ul {
+    li {
+    }
+  }
+
+  &__menu {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    // color: #607d8b;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    span {
+      margin-left: 2rem;
+    }
+
+    &:hover {
+      color: #03a9f3;
+    }
+    svg {
+      fill: #fff;
+    }
+  }
+}
