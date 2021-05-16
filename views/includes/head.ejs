@@ -19,7 +19,7 @@
         <div class="sidebar__navigation">
           <ul class="sidebar__navigation__list">
             <li class="sidebar__navigation__item">
-              <a href="user-dashboard.html" class="sidebar__link">
+              <a href="/user-dashboard" class="sidebar__link">
                 <svg class="sidebar__icon">
                   <use xlink:href="img/sprite.svg#icon-home"></use>
                 </svg>
@@ -28,7 +28,7 @@
             </li>
 
             <li class="sidebar__navigation__item">
-              <a href="payment-history.html" class="sidebar__link">
+              <a  href="/payment-history" class="sidebar__link">
                 <svg class="sidebar__icon">
                   <use xlink:href="img/sprite.svg#icon-map"></use>
                 </svg>
@@ -37,7 +37,7 @@
             </li>
 
             <li class="sidebar__navigation__item">
-              <a href="profile.html" class="sidebar__link">
+              <a href="/profile" class="sidebar__link">
                 <svg class="sidebar__icon">
                   <use xlink:href="img/sprite.svg#icon-account_circle"></use>
                 </svg>
@@ -82,9 +82,9 @@
       </div>
 
       <div class="main">
-        <div class="main__top">
+        <div class="main__top ">
           <h3 class="user-dashoboard__name">
-            Hi, LawaL
+            Hi, <%= user.fullname.split(" ")[0] %> 
           </h3>
 
           <a href="profile.html" class="main__top__link">
@@ -93,57 +93,3 @@
             </svg>
           </a>
         </div>
-
-        <!-- ------------payment history-------------------- -->
-
-        <div class="user-history">
-          <h2 class="">Payment history</h2>
-          <table class="user-history__table">
-            <thead>
-              <th>S.No</th>
-              <th>Amount</th>
-              <th>Status</th>
-              <th>Date</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>5000</td>
-                <td>Success</td>
-                <td>2020-02-12 04:49:28</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>2000</td>
-                <td>Success</td>
-                <td>2020-02-12 04:49:28</td>
-              </tr>
-
-              <tr>
-                <td>3</td>
-                <td>15000</td>
-                <td>Success</td>
-                <td>2020-02-12 04:49:28</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>9000</td>
-                <td>Success</td>
-                <td>2020-02-12 04:49:28</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>12000</td>
-                <td>Success</td>
-                <td>2020-02-12 04:49:28</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <!-- ----------- -->
-
-        <!-- ----------------------- -->
-      </div>
-    </div>
-  </body>
-</html>

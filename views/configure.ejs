@@ -1,0 +1,69 @@
+<%- include('./includes/head.ejs') %>
+
+
+        <!-------- --------------------------------- -->
+
+        <!-- experiment configuration -->
+
+        <!--------user getting started plan section------- -->
+
+        <div class="user-getting-started">
+          <h2>configure your savings plan</h2>
+          <form action="/configure" method="POST" class="plan__form">
+            <div class="input__group">
+              <label class="input__group__label" for=""
+                >How long will you like to save</label
+              >
+              <select class="input__group__select" name="savingsDuration" id="" required>
+                <option value="1 month">1 month</option>
+                <option value="2 month">2 month</option>
+                <option value="3 month">3 month</option>
+                <option value="4 month">4 month</option>
+              </select>
+            </div>
+            <div class="input__group">
+              <label class="input__group__label" for=""
+                >How much would you like to save for now</label
+              >
+              <input class="input__group__input" name="savingsAmount" type="text" required/>
+            </div>
+
+            <div class="input__group">
+              <label class="input__group__label"  for="">Account number</label>
+              <input class="input__group__input" name="accountNumber" type="text" required/>
+            </div>
+            <div class="input__group">
+              <label class="input__group__label" for="">Account name</label>
+              <input type="text" name="accountName" class="input__group__input" required />
+            </div>
+            <div class="input__group">
+              <label class="input__group__label" for="">Bank name</label>
+              <select class="input__group__select" name="bank" id="" required>
+                <option value="GT bank">GT bank</option>
+                <option value="Access bank">Access bank</option>
+                <option value="First bank">first bank</option>
+                <option value="UBA bank">UBA bank</option>
+              </select>
+            </div>
+
+            <div class="input__group">
+              <button class="btn btn--blue" type="submit">
+                Save plan
+              </button>
+            </div>
+          </form>
+
+          <h3>
+            <strong>Note: </strong>For discipline, withdrawals can only be done
+            on your choosen maturity date(e.g if you choose 1 month, you will
+            only be paid after 30 days)
+          </h3>
+        </div>
+
+        <!-- account seetings -->
+
+        <!-- ----------------------- -->
+      </div>
+    </div>
+  </body>
+</html>

@@ -13,13 +13,13 @@
           <svg class="sidebar__icon">
             <use xlink:href="img/sprite.svg#icon-menu"></use>
           </svg>
-          <a href="index.html" class="sidebar__easythrift">EasyThrift</a>
+          <a href="/" class="sidebar__easythrift">EasyThrift</a>
         </div>
 
         <div class="sidebar__navigation">
           <ul class="sidebar__navigation__list">
             <li class="sidebar__navigation__item">
-              <a href="user-dashboard.html" class="sidebar__link">
+              <a href="/user-dashboard" class="sidebar__link">
                 <svg class="sidebar__icon">
                   <use xlink:href="img/sprite.svg#icon-home"></use>
                 </svg>
@@ -28,16 +28,15 @@
             </li>
 
             <li class="sidebar__navigation__item">
-              <a href="payment-history.html" class="sidebar__link">
+              <a href="/payment-history" class="sidebar__link">
                 <svg class="sidebar__icon">
                   <use xlink:href="img/sprite.svg#icon-map"></use>
                 </svg>
                 <span>history</span>
               </a>
             </li>
-
             <li class="sidebar__navigation__item">
-              <a href="profile.html" class="sidebar__link">
+              <a href="/profile" class="sidebar__link">
                 <svg class="sidebar__icon">
                   <use xlink:href="img/sprite.svg#icon-account_circle"></use>
                 </svg>
@@ -94,66 +93,59 @@
           </a>
         </div>
 
-        <!-------- --------------------------------- -->
-
-        <!-- experiment configuration -->
-
-        <!--------user getting started plan section------- -->
-
-        <div class="user-getting-started">
-          <h2>configure your savings plan</h2>
-          <form action="" class="plan__form">
-            <div class="input__group">
-              <label class="input__group__label" for=""
-                >How long will you like to save</label
-              >
-              <select class="input__group__select" name="selection" id="">
-                <option value="">1 month</option>
-                <option value="">2 month</option>
-                <option value="">3 month</option>
-                <option value="">4 month</option>
-              </select>
-            </div>
-            <div class="input__group">
-              <label class="input__group__label" for=""
-                >How much would you like to save for now</label
-              >
-              <input class="input__group__input" type="text" />
-            </div>
-
-            <div class="input__group">
-              <label class="input__group__label" for="">Account number</label>
-              <input class="input__group__input" type="text" />
-            </div>
-            <div class="input__group">
-              <label class="input__group__label" for="">Account name</label>
-              <input type="text" class="input__group__input" />
-            </div>
-            <div class="input__group">
-              <label class="input__group__label" for="">Bank name</label>
-              <select class="input__group__select" name="selection" id="">
-                <option value="">GT bank</option>
-                <option value="">Access bank</option>
-                <option value="">first bank</option>
-                <option value="">UBA bank</option>
-              </select>
-            </div>
-
-            <div class="input__group">
-              <button class="btn btn--blue" type="submit">
-                Save plan
-              </button>
-            </div>
-          </form>
-
-          <h3>
-            <strong>Note: </strong>For discipline, withdrawals can only be done
-            on your choosen maturity date(e.g if you choose 1 month, you will
-            only be paid after 30 days)
-          </h3>
-        </div>
-
         <!-- account seetings -->
+
+        <div class="user-account">
+          <div class="user-account__box">
+            <h2>Personal information</h2>
+            <form action="/profile" method="POST" class="personalize__form">
+              <div class="personalize__form__box">
+                <h3>Full Name</h3>
+                <span><%= user.fullname %> </span>
+              </div>
+              <div class="personalize__form__box">
+                <h3>Email address</h3>
+                <span><%= user.email %></span>
+              </div>
+              <div class="personalize__form__box">
+                <h3>Phone number</h3>
+                <input type="text" name="phoneNumber" value="<%= user.phoneNumber %>" />
+              </div>
+              <div class="personalize__form__box">
+                <h3>Acoount name</h3>
+                <input type="text" name="accountName" value="<%= user.accountName %>" />
+              </div>
+              <div class="personalize__form__box">
+                <h3>Acoount number</h3>
+                <input type="text" name="accountNumber" value="<%= user.accountNumber %>" />
+              </div>
+              <div class="personalize__form__box">
+                <h3>Bank name</h3>
+                <select class="" name="selection" id="">
+                  <option value="GT bank" name="bank" <%= user.bank == 'GT bank' ? 'selected' : '' %>>GT bank</option>
+                  <option value="Access bank" name="bank" <%= user.bank == 'Access bank' ? 'selected' : '' %>>Access bank</option>
+                  <option value="First banK" name="bank" <%= user.bank == 'First banK' ? 'selected' : '' %>>first bank</option>
+                  <option value="UBA bank" name="bank" <%= user.bank == 'UBA bank' ? 'selected' : '' %>>UBA bank</option>
+                </select>
+              </div>
+              <button class="btn btn--blue">save changes</button>
+            </form>
+          </div>
+
+          <div class="user-account__box">
+            <h2>Security Settings</h2>
+            <form action="/changePassword" method="POST" class="personalize__form">
+              <div class="personalize__form__box">
+                <h3>old password</h3>
+                <input type="password" name="password" />
+              </div>
+              <div class="personalize__form__box">
+                <h3>New password</h3>
+                <input type="password" name="confirmPassword"/>
+              </div>
++            </form>
+          </div>
+        </div>
 
         <!-- ----------------------- -->
       </div>

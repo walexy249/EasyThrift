@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="admin-dashboard">
+      <header class="admin__header">
+        <div class="admin__logo">
+          <a href="#">EasyThrift</a>
+        </div>
+        <svg class="admin-icon toggler">
+          <use xlink:href="img/sprite.svg#icon-menu"></use>
+        </svg>
+        <div class="admin__header--right">
+          <form class="admin__search">
+            <input class="admin__search--input" type="text" />
+            <button>
+              <svg class="admin-icon">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="num-4">
+            <svg class="admin-icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="num">4</span>
+          </div>
+          <div class="header__image">
+            <img src="img/user-4.jpg" alt="user photo" />
+            <span>Lawal olawale</span>
+          </div>
+        </div>
+      </header>
+      <div class="admin__sidebar">
+        <ul>
+          <li>
+            <a href="#" class="admin__sidebar__menu">
+              <svg class="admin-icon">
+                <use xlink:href="img/sprite.svg#icon-laptop"></use>
+              </svg>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="admin__sidebar__menu">
+              <svg class="admin-icon">
+                <use xlink:href="img/sprite.svg#icon-users"></use>
+              </svg>
+              <span>members</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="admin__sidebar__menu">
+              <svg class="admin-icon">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <span>payment history</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="admin__sidebar__menu">
+              <svg class="admin-icon">
+                <use xlink:href="img/sprite.svg#icon-infinity"></use>
+              </svg>
+              <span>Add new user</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="admin__sidebar__menu">
+              <svg class="admin-icon">
+                <use xlink:href="img/sprite.svg#icon-log-out"></use>
+              </svg>
+              <span>logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="admin__main">
+          <div class="login__box">
+            <h2 class="login__heading">Create a secure account</h2>
+            <p>welcome to the future of savings</p>
+            <form action="" class="form">
+              <div class="form__group u-margin-bottom-1">
+                <label for="" class="form__label">Fullname</label>
+                <input type="text" class="form__input" required />
+              </div>
+      
+              <!-- <div class="error__message u-margin-bottom-1">
+                Invalid username or password
+              </div> -->
+              <div class="form__group u-margin-bottom-1">
+                <label for="" class="form__label">Email address</label>
+                <input type="email" class="form__input" required />
+              </div>
+              <div class="form__group u-margin-bottom-1">
+                <label for="" class="form__label">Phone number</label>
+                <input type="text" class="form__input" required />
+              </div>
+              <div class="form__group u-margin-bottom-1">
+                <label for="" class="form__label">password</label>
+                <input type="password" class="form__input" required />
+              </div>
+              <div class="form__group u-margin-bottom-1">
+                <label for="" class="form__label">confirm password</label>
+                <input type="password" class="form__input" required />
+              </div>
+              <button type="submit" class="btn--submit">create account</button>
+            </form>
+          </div>
+        <!-- admin history -->
+        
+      </div>
+    </div>
+  </body>
+</html>

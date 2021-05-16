@@ -8,23 +8,24 @@
   </head>
   <body class="login__body">
     <div class="login__top">
-      <a href="index.html" class="EasyThrift__logo">EasyThrift</a>
+      <a href="/" class="EasyThrift__logo">EasyThrift</a>
     </div>
     <div class="login__box">
       <h2 class="login__heading">Login to your account</h2>
       <p>securely login to your account</p>
-      <form action="" class="form">
+      <form action="/login" method="POST" class="form">
         <div class="form__group u-margin-bottom-1">
           <label for="email" class="form__label">Email</label>
-          <input type="email" class="form__input" required />
+          <input type="email" name="email" class="form__input" value="<%= errorMessage ? oldData.email  : "" %>" required />
         </div>
-
-        <!-- <div class="error__message u-margin-bottom-1">
-          Invalid username or password
-        </div> -->
+        <% if (errorMessage) {  %> 
+          <div class="error__message u-margin-bottom-1">
+            <%= errorMessage %> 
+          </div>
+        <% } %> 
         <div class="form__group u-margin-bottom-1">
           <label for="email" class="form__label">password</label>
-          <input type="password" class="form__input" required />
+          <input type="password" name="password" class="form__input" value="<%= errorMessage ? oldData.password : "" %>" required />
         </div>
         <button type="submit" class="btn--submit">Log in</button>
       </form>
